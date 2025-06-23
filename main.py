@@ -12,8 +12,11 @@ def telegram_bot(token):
 
     @bot.message_handler(commands=['weather'])
     def get_weather(message):
-        bot.send_message(message.chat.id, f'Температура в москве сейчас: {temperature}')
-
+        try:
+            bot.send_message(message.chat.id, f'Температура в москве сейчас: {temperature}')
+        except Exception as ex:
+            print(ex)
+            bot.send_message(message.chat.id, f'Простите, что-то пошло не так. >_<')
     bot.polling()
 
 
