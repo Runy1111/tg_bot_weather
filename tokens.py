@@ -1,0 +1,2 @@
+bot_token = '7234978853:AAFI1YOxk5AXQDRa81KG4Nb5UBNjq6TwVwE'
+API_token = 'edaeb83a4e83c6011ae582d318fe173e'
